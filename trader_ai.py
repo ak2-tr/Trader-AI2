@@ -10,7 +10,6 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import threading
 warnings.filterwarnings('ignore')
 
-# ---------- Configuration ----------
 # Your Wallex API Keys (keep secret!) - Not used in paper trading mode
 WALLEX_API_KEY = '15163F5FpOxwB5h0sz6FUcxjDtyjKxEEgCLf1JJRjxtPN'
 
