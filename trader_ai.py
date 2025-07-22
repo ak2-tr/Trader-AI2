@@ -11,6 +11,7 @@ import threading
 warnings.filterwarnings('ignore')
 
 # ---------- Configuration ----------
+# Your Wallex API Keys (keep secret!) - Not used in paper trading mode
 WALLEX_API_KEY = '15163F5FpOxwB5h0sz6FUcxjDtyjKxEEgCLf1JJRjxtPN'
 
 # Telegram Bot
@@ -18,7 +19,10 @@ TELEGRAM_TOKEN = '7993659973:AAER9YPr8H9yEE5TycFCyHTyBKIfLl3JAUw'  # From @BotFa
 TELEGRAM_CHAT_ID = '748595017'  # Your user ID (must match for security)
 
 # Trading Params (from your script, adjust based on grid search results)
-SYMBOLS = ['BTC/USDT', 'ETH/USDT']  # Example pair; extend as needed
+SYMBOLS = [
+    'BTC/USDT', 'ETH/USDT', 'BNB/USDT', 'XRP/USDT', 'SOL/USDT',
+    'LTC/USDT', 'TRX/USDT', 'DOGE/USDT', 'ADA/USDT', 'LINK/USDT'
+]  # Updated: Full list from asli.py
 TIMEFRAME = '4h'
 LOOKBACK = 300
 FEE = 0.001  # Round-trip fee (simulated in paper mode)
