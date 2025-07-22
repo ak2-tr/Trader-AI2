@@ -12,12 +12,11 @@ warnings.filterwarnings('ignore')
 
 # ---------- Configuration ----------
 # Your Wallex API Keys (keep secret!) - Not used in paper trading mode
-WALLEX_API_KEY = 'YOUR_WALLEX_API_KEY'
-WALLEX_SECRET = 'YOUR_WALLEX_SECRET'
+WALLEX_API_KEY = '15163F5FpOxwB5h0sz6FUcxjDtyjKxEEgCLf1JJRjxtPN'
 
 # Telegram Bot
-TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'  # From @BotFather
-TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'  # Your user ID (must match for security)
+TELEGRAM_TOKEN = '7993659973:AAER9YPr8H9yEE5TycFCyHTyBKIfLl3JAUw'  # From @BotFather
+TELEGRAM_CHAT_ID = '748595017'  # Your user ID (must match for security)
 
 # Trading Params (from your script, adjust based on grid search results)
 SYMBOLS = ['BTC/USDT', 'ETH/USDT']  # Example pair; extend as needed
@@ -50,7 +49,6 @@ simulated_amount1, simulated_amount2 = 0, 0  # For paper mode
 # Initialize Exchange (used for data fetching even in paper mode)
 exchange = ccxt.wallex({
     'apiKey': WALLEX_API_KEY,
-    'secret': WALLEX_SECRET,
     'enableRateLimit': True,
     'options': {'defaultType': 'future'}  # For futures
 })
