@@ -9,14 +9,14 @@ import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import threading
 warnings.filterwarnings('ignore')
-
+import os
 # ---------- Configuration ----------
 # Your Wallex API Keys (keep secret!) - Not used in paper trading mode
-WALLEX_API_KEY = '15163F5FpOxwB5h0sz6FUcxjDtyjKxEEgCLf1JJRjxtPN'
+WALLEX_API_KEY = os.getenv('WALLEX_API_KEY')
 
 # Telegram Bot
-TELEGRAM_TOKEN = '7993659973:AAER9YPr8H9yEE5TycFCyHTyBKIfLl3JAUw'  # From @BotFather
-TELEGRAM_CHAT_ID = '748595017'  # Your user ID (must match for security)
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 # Trading Params (from your script, adjust based on grid search results)
 SYMBOLS = [
