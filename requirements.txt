@@ -1,6 +1,11 @@
-ccxt
+requests
 pandas
 numpy
 statsmodels
-itertools
 python-telegram-bot
+os
+sys
+time
+asyncio
+traceback
+warnings
